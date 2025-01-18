@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Toggle Theme Button Styling */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* Project Container Styling */
+        #projectsContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Project Card Styling */
+        .project-card {
+            background-color: #fff;
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Technology Tag Styling */
+        .technology-tag {
+            display: inline-block;
+            background-color: #f1f3f5;
+            color: #007bff;
+            font-weight: bold;
+            padding: 5px 10px;
+            margin: 2px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .technology-tag:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Year Badge Styling */
+        .year-badge {
+            background-color: #28a745;
+            color: white;
+            font-size: 0.8em;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            float: right;
+        }
+
+        /* Dark Mode Styling */
+        .dark-mode {
+            background: #121212;
+            color: #ffffff;
+        }
+
+        .dark-mode .project-card {
+            background-color: #1e1e1e;
+            border-color: #333;
+        }
+
+        .dark-mode .project-card h2 {
+            color: #1abc9c;
+        }
+
+        .dark-mode .project-card p {
+            color: #ffffff; /* Description text in white */
+        }
+
+        .dark-mode .technology-tag {
+            background-color: #333;
+            color: #1abc9c;
+        }
+
+        .dark-mode .technology-tag:hover {
+            background-color: #1abc9c;
+            color: #333;
+        }
+
+        .dark-mode .year-badge {
+            background-color: #e74c3c;
+        }
+
+        .dark-mode .theme-toggle {
+            background-color: #1abc9c;
+        }
+
+        .dark-mode .theme-toggle:hover {
+            background-color: #16a085;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Project Portfolio</h1>
+    <button class="theme-toggle" id="themeToggle">Toggle Dark Mode</button>
+    <div id="projectsContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
