@@ -2,7 +2,7 @@ const projects = [
     {
         name: 'SocialHub',
         description: 'A social media app for sharing posts.',
-        technologyUsed: ['Flutter', 'Firebase'],
+        technologyUsed: ['HTML', 'CSS','PYTHON'],
         year: 2022
     },
     {
